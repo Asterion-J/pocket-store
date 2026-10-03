@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PocketStore - Catálogo Offline</title>
+  <meta name="description" content="Catálogo de tiendas que funciona sin conexión.">
+  <meta name="theme-color" content="#0F2A43">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1 class="brand">PocketStore</h1>
+    <span id="status" class="status" data-state="online" role="status">En línea</span>
+  </header>
+
+  <main class="content">
+    <div class="intro">
+      <h2>Tiendas del catálogo</h2>
+      <p id="summary" class="summary">Cargando catálogo…</p>
+    </div>
+
+    <label class="search" for="search">
+      <span class="visually-hidden">Buscar tienda</span>
+      <input id="search" type="search" placeholder="Buscar por tienda, dueño o ciudad" autocomplete="off" disabled>
+    </label>
+
+    <section id="catalog" class="grid" aria-live="polite" aria-busy="true">
+      <article class="card skeleton" aria-hidden="true"></article>
+      <article class="card skeleton" aria-hidden="true"></article>
+      <article class="card skeleton" aria-hidden="true"></article>
+      <article class="card skeleton" aria-hidden="true"></article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Usar Javascript me duele en el alma</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
