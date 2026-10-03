@@ -79,7 +79,7 @@ Hace `fetch()` a `https://jsonplaceholder.typicode.com/users` y muestra cada usu
 ### App funcionando sin conexión
 ![Modo offline](img/image5.png)
 
-### App instalada
+### App Funcionando al 100
 ![App Funcionando al 100](img/image6.png)
 
 ## Tecnologías
